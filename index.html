@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Your Name — Personal Portfolio</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About &amp; Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About &amp; Skills</h2>
+      <p>I am a web development student interested in accessible, standards-based interfaces and practical front-end development. I enjoy building small projects that emphasize clear structure, maintainable code, and a straightforward user experience.</p>
+      <img src="images/profile.svg" alt="Profile illustration of the student">
+
+      <h3>Technical Skills</h3>
+      <dl>
+        <dt>HTML5</dt>
+        <dd>Semantic document structure, accessible forms, and standards-compliant markup.</dd>
+        <dt>JavaScript</dt>
+        <dd>Interactive browser functionality and basic client-side application logic.</dd>
+        <dt>Git &amp; GitHub</dt>
+        <dd>Version control, repository management, and collaborative development workflows.</dd>
+        <dt>Accessibility</dt>
+        <dd>Accessible labels, alternative text, logical document structure, and keyboard-friendly content.</dd>
+      </dl>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Semantic Portfolio</h3>
+        <p>A single-page portfolio created with semantic HTML5 elements and browser-default rendering. The project demonstrates internal navigation, structured skills data, accessible imagery, and a contact form without CSS or inline styling.</p>
+        <p><a href="https://github.com/whatwg/html">Repository</a></p>
+      </article>
+
+      <article>
+        <h3>Accessible Contact Form</h3>
+        <p>A small form-focused project demonstrating explicitly paired labels, appropriate input types, a multiline message field, and a submit control using native HTML behavior.</p>
+        <p><a href="https://github.com/mdn/content">Repository</a></p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+        </p>
+        <p><button type="submit">Send Message</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alex Morgan. Built with semantic HTML5.</p>
+  </footer>
+</body>
+</html>
